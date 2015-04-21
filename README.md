@@ -54,3 +54,8 @@ ViewerServlet: Main Servlet, it loads the basic web to manage graphics
 
 After configuring the API you can deploy both applications using your app server and go to this URL:
 http://localhost:8080/MarketTradeViewer/ViewerServlet
+
+You can should POST messages using this endpoint:
+http://localhost:8080/API/rest/message/add
+
+
