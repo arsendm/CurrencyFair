@@ -46,6 +46,9 @@ using all of the Java Applications (example clients) located at:
 - GetCountriesSumByCurrency.java: Java Application used to test the list amounts sum by country functionality.
 - GetRateAvgByCurrency.java: Java Application used to test the list average rates by month functionality.
 
+You can should POST messages using this endpoint:
+http://localhost:8080/API/rest/message/add
+
 —————— MarketTradeViewer Project ——————
 
 ViewerServlet: Main Servlet, it loads the basic web to manage graphics
@@ -55,7 +58,12 @@ ViewerServlet: Main Servlet, it loads the basic web to manage graphics
 After configuring the API you can deploy both applications using your app server and go to this URL:
 http://localhost:8080/MarketTradeViewer/ViewerServlet
 
-You can should POST messages using this endpoint:
-http://localhost:8080/API/rest/message/add
+Inside the web app:
+1) Select Currency “From” and Currency “To”
+2) Click on GO!
+3) It will show you 3 graphics:
+- Rate / Time: variation of the selected exchange rate against time
+- Amounts / Time: variation between sell amount and buy amount against time
+- Countries Sell / Buy: total amounts (sell and buy) in each country
 
 
